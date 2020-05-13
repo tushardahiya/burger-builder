@@ -5,26 +5,26 @@ const BurgerIngredient = (props) => {
     let ingredient =null;
 
     switch (props.type) {
-        case('Bread-Bottom'):
+        case('bread-bottom'):
         ingredient=<div className={classes.BreadBottom}></div>;
         break;
-        case('Bread-Top'):
+        case('bread-top'):
         ingredient=(
             <div className={classes.BreadTop}>
                 <div className={classes.Seeds1}></div>;
                 <div className={classes.Seeds2}></div>;
             </div>)
         break;
-        case('Meat'):
+        case('meat'):
         ingredient=<div className={classes.Meat}></div>;   
         break;
-        case('Cheese'):
+        case('cheese'):
         ingredient= <div className={classes.Cheese}></div>     
         break;
-        case('Salad'):
+        case('salad'):
         ingredient= <div className={classes.Salad}></div>     
         break;
-        case('Bacon'):
+        case('bacon'):
         ingredient= <div className={classes.Bacon}></div>     
         break;
         default:
