@@ -9,16 +9,16 @@ import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
 const INGREDIENT_PRICES = {
-  salad: 0.5,
-  cheese: 0.4,
-  meat: 1.3,
-  bacon: 0.7,
+  salad: 5.0,
+  cheese: 15.0,
+  meat: 30.0,
+  bacon: 20.0,
 };
 
 class BurgerBuilder extends Component {
   state = {
     ingredients: null,
-    totalPrice: 4,
+    totalPrice: 20,
     purchasable: false,
     purchasing: false,
     loading: false,
