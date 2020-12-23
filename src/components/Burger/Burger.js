@@ -31,7 +31,7 @@ let transformedIngredients = Object.keys(props.ingredients)
 export default burger;
 
 
-      // LOGIC OF CONST TRASFORMEDINGREDIENTS
+    // LOGIC OF CONST TRASFORMEDINGREDIENTS
     //   array of keys [meat,bacon....]
 
         // map received meat for example
