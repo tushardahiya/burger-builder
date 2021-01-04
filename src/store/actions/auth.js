@@ -42,9 +42,9 @@ export const auth = (email , password , isSignup ) => {
             console.log(response.data);
             dispatch(authSuccess(response.data.idToken , response.data.localId));
         } )
-        .catch( error => {
-            console.log(error);
-            dispatch(authFail(error));
+        .catch( err => {
+            console.log(err);
+            dispatch(authFail(err.response.data.error));
         } )
     }
 }
