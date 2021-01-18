@@ -22,7 +22,7 @@ class App extends Component {
         <Switch>
             <Route path="/auth" component={Auth} />
             <Route path="/" exact component={BurgerBuilder} />
-            <Redirect to='/'/>
+            
         </Switch>
     );
     if (this.props.isAuthenticated) {
