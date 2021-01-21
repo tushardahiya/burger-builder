@@ -16,3 +16,5 @@ describe('<NavigationItems />' , () => {
 
     })
 })
+
+// it passed cause auth prop is not passed to it so only 2 navitems are rendered
