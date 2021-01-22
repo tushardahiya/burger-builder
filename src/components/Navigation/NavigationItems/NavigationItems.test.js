@@ -9,12 +9,18 @@ import NavigationItem from './NavigationItem/NavigationItem';
 configure({adapter : new Adapter()});
 
 describe('<NavigationItems />' , () => {
+
+    let wrapper;
+    beforeEach( () => {
+        wrapper = shallow(<NavigationItems />);
+    })
+
     it('should render two <NavigationItem /> elements if not authorized', () => {
-        const wrapper = shallow(<NavigationItems />);
-
         expect(wrapper.find(NavigationItem)).toHaveLength(2);
+    });
 
+    it('should render three <NavigationItem /> elements if authorized', () => {
+        wrapper.setProps({isAuthenticated : true})
+        expect(wrapper.find(NavigationItem)).toHaveLength(3);
     })
 })
-
-// it passed cause auth prop is not passed to it so only 2 navitems are rendered
