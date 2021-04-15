@@ -1,4 +1,4 @@
-#Burger Builder
+# Burger Builder
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 A Web App made with ReactJS that can help user purchase a customized burger with his order history
