@@ -18,10 +18,13 @@ const burgerBuilder = (props) => {
   }, []);
 
   const updatePurchaseState = (ingredients) => {
+    // object.keys will give me array of keys (i.e bacon, salad, meat , cheese)
     const sum = Object.keys(ingredients)
       .map((igkey) => {
+        // after mapping i will have array with amount of each ingredient
         return ingredients[igkey];
       })
+      // then i will reduce this array to get the sum (first argument is the reducer function , second argument is the initial value)
       .reduce((sum, el) => {
         return sum + el;
       }, 0);

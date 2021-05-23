@@ -32,7 +32,7 @@ const app = (props) => {
   );
   if (props.isAuthenticated) {
     routes = (
-      <switch>
+      <Switch>
         <Route path="/logout" component={Logout} />
         <Route path="/" exact component={BurgerBuilder} />
         <Suspense fallback={<div>Loading...</div>}>
@@ -41,7 +41,7 @@ const app = (props) => {
           <Route path="/auth" component={Auth} />
         </Suspense>
         <Redirect to="/" />
-      </switch>
+      </Switch>
     );
   }
 
